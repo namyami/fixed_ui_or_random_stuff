@@ -1,5 +1,7 @@
 yes i take commission @nam67__ on discord, (don't be shy..).
 
+i wont add like finobe's ui or samet's ui here since.. well..-
+
 ## UI PREVIEWS
 
 <table>
