@@ -21,7 +21,6 @@ Millionware<br>
 (this wasnt working with swift)
 </td>
 </tr>
- (this wasnt working with swift)
 <tr>
 <td align="center">
 <img src="https://raw.githubusercontent.com/namyami/fixed_ui_or_random_stuff/main/bitchbot/preview.png" width="250"><br>
@@ -39,7 +38,6 @@ deadcell<br>
 (this wasnt working with swift)
 </td>
 </tr>
-
 <tr>
 <td align="center">
 <img src="https://raw.githubusercontent.com/namyami/fixed_ui_or_random_stuff/main/dreya/preview.png" width="250"><br>
@@ -57,7 +55,6 @@ gamesneeze<br>
 fixed the full source of gamesneeze
 </td>
 </tr>
-
 <tr>
 <td align="center">
 <img src="https://raw.githubusercontent.com/namyami/fixed_ui_or_random_stuff/main/linemaster/preview.png" width="250"><br>
@@ -75,7 +72,6 @@ phantomhake<br>
 (this wasnt working with swift)
 </td>
 </tr>
-
 <tr>
 <td align="center">
 <img src="https://raw.githubusercontent.com/namyami/fixed_ui_or_random_stuff/main/velocity.vip/preview.png" width="250"><br>
