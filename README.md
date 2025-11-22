@@ -74,9 +74,9 @@ phantomhake<br>
 </tr>
 <tr>
 <td align="center">
-<img src="https://raw.githubusercontent.com/namyami/fixed_ui_or_random_stuff/main/velocity.vip/preview.png" width="250"><br>
+<img src="" width="250"><br>
 velocity.vip<br>
-(this wasnt working with swift)
+(NO IMAGES YET....)
 </td>
 <td align="center">
 <img src="https://raw.githubusercontent.com/namyami/fixed_ui_or_random_stuff/main/vozoid/preview.png" width="250"><br>
