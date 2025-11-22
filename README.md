@@ -21,7 +21,7 @@ Millionware<br>
 (this wasnt working with swift)
 </td>
 </tr>
-
+ (this wasnt working with swift)
 <tr>
 <td align="center">
 <img src="https://raw.githubusercontent.com/namyami/fixed_ui_or_random_stuff/main/bitchbot/preview.png" width="250"><br>
