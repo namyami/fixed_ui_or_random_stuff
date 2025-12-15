@@ -106,8 +106,8 @@ self-leaked
   
 <td align="center">
 <img src="https://raw.githubusercontent.com/namyami/fixed_ui_or_random_stuff/main/bbotremake/preview.png" width="250"><br>
-officehaxx<br>
-self-leaked
+bbot<br>
+major issues fixed (and made the watermark actually works)
 </td>
   
 </tr>
