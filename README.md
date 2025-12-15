@@ -103,5 +103,12 @@ uhh slightly changed somethin idk
 officehaxx<br>
 self-leaked
 </td>
+  
+<td align="center">
+<img src="https://raw.githubusercontent.com/namyami/fixed_ui_or_random_stuff/main/bbotremake/preview.png" width="250"><br>
+officehaxx<br>
+self-leaked
+</td>
+  
 </tr>
 </table>
