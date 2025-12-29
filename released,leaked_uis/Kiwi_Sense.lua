@@ -11302,5 +11302,4 @@ Library:Notification({
 Library:Init() -- put this at the end of ur script or the autoload will not work
 --]]
 getgenv().Library = Library
-
 return Library, Options, MiscOptions
