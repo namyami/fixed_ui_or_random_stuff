@@ -3327,7 +3327,7 @@ local Library do
                         continue
                     end
 
-                    Value.ZIndex = Bool and 10 or 0
+                   Value.ZIndex = Bool and 999 or 0
 
                     if type(TransparencyProperty) == "table" then 
                         for _, Property in TransparencyProperty do 
@@ -11303,4 +11303,5 @@ Library:Init() -- put this at the end of ur script or the autoload will not work
 --]]
 getgenv().Library = Library
 return Library, Options, MiscOptions, ESPFonts, SelectedESPFont
+
 
