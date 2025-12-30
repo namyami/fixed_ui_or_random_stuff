@@ -10114,7 +10114,7 @@ local Library do
         end
     end
 end 
-
+--[[
 -- Example
 do
     local Window = Library:Window({
@@ -11303,6 +11303,7 @@ Library:Notification({
 })
 
 Library:Init() -- put this at the end of ur script or the autoload will not work
-
+==]]
 getgenv().Library = Library
 return Library, Options, MiscOptions, ESPFonts, SelectedESPFont
+
