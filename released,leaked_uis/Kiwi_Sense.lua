@@ -4703,7 +4703,7 @@ local Library do
                         AutomaticSize = Enum.AutomaticSize.Y,
                         Position = UDim2New(0, 0, 1, 5),
                         BorderSizePixel = 0,
-                        ZIndex = 5,
+                        ZIndex = 500,
                         TextSize = 14,
                         BackgroundColor3 = FromRGB(22, 25, 29)
                     })  DropdownItems["OptionHolder"]:AddToTheme({BackgroundColor3 = "Inline"})
@@ -4816,7 +4816,9 @@ local Library do
                         BorderSizePixel = 0,
                         BackgroundColor3 = FromRGB(255, 255, 255)
                     })  OptionText:AddToTheme({TextColor3 = "Text"})
-
+                    OptionText.Instance:SetAttribute("CustomZIndex", 600)
+                    CheckImage.Instance:SetAttribute("CustomZIndex", 600)
+                    OptionButton.Instance:SetAttribute("CustomZIndex", 600)
                     local OptionData = {
                         Selected = false,
                         Name = Option,
@@ -4971,10 +4973,10 @@ local Library do
 
                     if Bool then 
                         DropdownItems["OptionHolder"].Instance.Visible = true
-
                         RenderStepped = RunService.RenderStepped:Connect(function()
                             DropdownItems["OptionHolder"].Instance.Position = UDim2New(0, DropdownItems["RealDropdown"].Instance.AbsolutePosition.X, 0,  DropdownItems["RealDropdown"].Instance.AbsolutePosition.Y + DropdownItems["RealDropdown"].Instance.AbsoluteSize.Y + 5)
                             DropdownItems["OptionHolder"].Instance.Size = UDim2New(0, DropdownItems["RealDropdown"].Instance.AbsoluteSize.X, 0, 85)
+                            DropdownItems["OptionHolder"].Instance.ZIndex = 500
                         end)
                     else
                         if RenderStepped then
@@ -4999,7 +5001,8 @@ local Library do
                             continue
                         end
 
-                        Value.ZIndex = Bool and 10 or 0
+                        local Custom = Value:GetAttribute("CustomZIndex")
+                        Value.ZIndex = Bool and (type(Custom) == "number" and Custom or 10) or 0
 
                         if type(TransparencyProperty) == "table" then 
                             for _, Property in TransparencyProperty do 
@@ -10111,7 +10114,7 @@ local Library do
         end
     end
 end 
---[[
+
 -- Example
 do
     local Window = Library:Window({
@@ -11300,8 +11303,6 @@ Library:Notification({
 })
 
 Library:Init() -- put this at the end of ur script or the autoload will not work
---]]
+
 getgenv().Library = Library
 return Library, Options, MiscOptions, ESPFonts, SelectedESPFont
-
-
