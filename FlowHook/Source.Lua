@@ -204,21 +204,19 @@ local keys = {
     [Enum.KeyCode.Escape] = "ESC",
 }
 --
-local folder, images = library.folder .. "/assets", {
-    gradient90 = "https://raw.githubusercontent.com/portallol/luna/main/Gradient.png",
-    gradient180 = "https://raw.githubusercontent.com/portallol/luna/main/Gradient180.png"
+local images = {
+    ['gradient90'] = "https://raw.githubusercontent.com/portallol/luna/main/Gradient.png";
+    ['gradient180'] = "https://raw.githubusercontent.com/portallol/luna/main/Gradient180.png";
 }
 
-if not isfolder(folder) then makefolder(folder) end
-
-for name, url in images do
-    local path = folder .. "/" .. name .. ".png"
+for i,v in next, images do
+    local path = library.folder..'/assets/'..i..'.png'
     if not isfile(path) then
-        local ok, res = pcall(game.HttpGet, game, url)
-        if ok then writefile(path, res) end
+        writefile(path, game:HttpGet(v))
     end
-    images[name] = path
+    images[i] = readfile(path)
 end
+
 
 
 
