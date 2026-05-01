@@ -1232,9 +1232,16 @@ local Env = getgenv()
 
     function Library:New(type, props, ignore)
         ignore = ignore or false
-
         local Object = Utility:New(type, props)
-
+        if props["TextStrokeTransparency"] and props["TextStrokeTransparency"] == 0 then
+            props["TextStrokeTransparency"] = 1
+            Utility:New("UIStroke", {
+                ["Thickness"] = 1;
+                ["LineJoinMode"] = Enum.LineJoinMode.Miter;
+                ["Parent"] = Object
+            })
+            Object["TextStrokeTransparency"] = 1
+        end
         if not ignore then
             Library.Objects[#Library.Objects + 1] = Object
         end
@@ -4523,7 +4530,6 @@ local Env = getgenv()
         return Watermark
     end 
 -- 
---[[
      local Window = Library:Window({})
 
      local Tab = Window:Tab({})
@@ -4620,7 +4626,7 @@ local Env = getgenv()
          EnemyESP:Slider({Name = "Size", Suffix = "px", Float = 1, Value = 13, Min = 0, Max = 30, Flag = "enemy_oof_size"})
          EnemyESP:Slider({Name = "Radius", Suffix = "px", Float = 1, Value = 200, Min = 0, Max = 1000, Flag = "enemy_oof_fov"})
      end
- end]]
+ end
 
 
 return Env, Library
