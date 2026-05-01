@@ -36,16 +36,16 @@ if not isfolder(library.Folder) then
     makefolder(library.Folder.."/Configs")
     makefolder(library.Folder.."/Assets")
     makefolder(library.Folder.."/Utility")
-    writefile(library.Folder.."/Utility/Extension.lua",game:HttpGet("https://raw.githubusercontent.com/oogx/Roblox/main/Uis/Drawing/Silent/Utility/Extension.lua"))
-    writefile(library.Folder.."/Utility/Signal.lua",game:HttpGet("https://raw.githubusercontent.com/oogx/Roblox/main/Uis/Drawing/Silent/Utility/Signal.lua"))
+    writefile(library.Folder.."/Utility/Extension.lua",game:HttpGet("https://raw.githubusercontent.com/namyami/Roblox/main/Uis/Drawing/Silent/Utility/Extension.lua"))
+    writefile(library.Folder.."/Utility/Signal.lua",game:HttpGet("https://raw.githubusercontent.com/namyami/Roblox/main/Uis/Drawing/Silent/Utility/Signal.lua"))
 end
 local drawing = loadstring(readfile(tostring(library.Folder.."/Utility/Extension.lua")))()
 local themeobjects = {}
 local images = {
-    ['gradient3'] = "https://raw.githubusercontent.com/oogx/Roblox/main/Uis/Drawing/DeadCell/Assets/Gradient3.png",
-    ['gradient4'] = "https://raw.githubusercontent.com/oogx/Roblox/main/Uis/Drawing/DeadCell/Assets/Gradient4.png",
-    ['down'] = "https://raw.githubusercontent.com/oogx/Roblox/main/Uis/Drawing/DeadCell/Assets/Down.png",
-    ['up'] = "https://raw.githubusercontent.com/oogx/Roblox/main/Uis/Drawing/DeadCell/Assets/Up.png",
+    ['gradient3'] = "https://raw.githubusercontent.com/namyami/Roblox/main/Uis/Drawing/DeadCell/Assets/Gradient3.png",
+    ['gradient4'] = "https://raw.githubusercontent.com/namyami/Roblox/main/Uis/Drawing/DeadCell/Assets/Gradient4.png",
+    ['down'] = "https://raw.githubusercontent.com/namyami/Roblox/main/Uis/Drawing/DeadCell/Assets/Down.png",
+    ['up'] = "https://raw.githubusercontent.com/namyami/Roblox/main/Uis/Drawing/DeadCell/Assets/Up.png",
 }
 for i,v in pairs(images) do
     if not isfile(library.Folder..'/Assets/'..i..'.png') then
